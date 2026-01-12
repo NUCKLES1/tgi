@@ -40,12 +40,14 @@ const Navbar = () => {
     <div>
       <div className="w-full background py-6 px-10 max-sm:px-4 fixed z-100 overflow-hidden">
         <div className="flex justify-between">
-          <div className="mt-2 flex">
-          <Logo /> 
-            <div className="pl-14 -mt-2 font-bold">
-              <h1>TGI</h1>
+          <Link href="/" className="cursor-pointer">
+            <div className="mt-2 flex">
+              <Logo />
+              <div className="pl-14 -mt-2 font-bold">
+                <h1>TGI</h1>
+              </div>
             </div>
-          </div>
+          </Link>
 
           <div
             className="text-bold text-xl gap-1 flex cursor-pointer"
@@ -65,7 +67,7 @@ const Navbar = () => {
         }}
         className="absolute overflow-hidden bg-black bg-opacity-[0.5] right-0 h-screen z-120 rounded-tl-3xl rounded-bl-3xl bottom-0"
       >
-        <div className="w-full px-8 pt-6">
+        <div className="w-full px-8 md:px-4 pt-6">
           <div
             onClick={toggleStyle}
             className="flex gap-3 text-white text-xl font-bold cursor-pointer justify-end"

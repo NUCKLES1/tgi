@@ -1,8 +1,21 @@
-import React from "react";
+"use client";
+
+import React, { useRef } from "react";
+import Link from "next/link";
+import { motion, useInView } from "framer-motion";
 import Question from "../homepage/Questions";
 import { IoArrowForwardOutline } from "react-icons/io5";
 
 const Flexible = () => {
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true, margin: "-50px" });
+
+  const ref1 = useRef(null);
+  const isInView1 = useInView(ref1, { once: true, margin: "-50px" });
+
+  const ref2 = useRef(null);
+  const isInView2 = useInView(ref2, { once: true, margin: "-50px" });
+
   const facts = [
     {
       number: "01",
@@ -12,36 +25,48 @@ const Flexible = () => {
     {
       number: "02",
       question: "Development speed",
-      answer: "Workflows and engineering culture that ensure the right balance between quality, stability, and speed",
+      answer:
+        "Workflows and engineering culture that ensure the right balance between quality, stability, and speed",
     },
     {
       number: "03",
       question: "Measurable process",
-      answer: "Budget, risk and timeline management by experienced Product-Manager",
+      answer:
+        "Budget, risk and timeline management by experienced Product-Manager",
     },
     {
       number: "04",
       question: "Time-to-market",
-      answer: "We prioritize getting your product to market quickly over building unnecessarily complex systems",
+      answer:
+        "We prioritize getting your product to market quickly over building unnecessarily complex systems",
     },
     {
       number: "05",
       question: "Tangible results",
-      answer: "Roadmaps and sprints planned for tangible deliverables to reduce 'busy work' and generate business value.",
+      answer:
+        "Roadmaps and sprints planned for tangible deliverables to reduce 'busy work' and generate business value.",
     },
     {
       number: "06",
       question: "We build it, we run it",
-      answer: "Philosophy that creates true accountability and continuous improvement.",
+      answer:
+        "Philosophy that creates true accountability and continuous improvement.",
     },
   ];
 
   return (
     <div className="h-auto  py-20 w-full">
       <div className="p-20 max-sm:p-6">
-        <h1 className="text-5xl max-sm:text-4xl">
-          Flexible, reliable, <br /> on time
-        </h1>
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          animate={isInView ? { opacity: 1, y: 0 } : {}}
+          transition={{ duration: 0.5, ease: "easeOut" }}
+          ref={ref}
+        >
+          <h1 className="text-5xl max-sm:text-4xl">
+            Flexible, reliable, <br /> on time
+          </h1>
+        </motion.div>
         <div className="max-sm:-ml-6">
           <div className="socket max-sm:-px-20">
             <div className="gel center-gel">
@@ -242,7 +267,9 @@ const Flexible = () => {
               >
                 <div className="w-full flex">
                   <div>
-                    <p className="text-gray-700 mt-2 max-sm:w-[80%] lg:text-3xl flex max-sm:text-2xl uppercase">{facts.number}</p>
+                    <p className="text-gray-700 mt-2 max-sm:w-[80%] lg:text-3xl flex max-sm:text-2xl uppercase">
+                      {facts.number}
+                    </p>
                   </div>
                   <div className="lg:pl-4">
                     <p className="text-gray-700 mt-2 max-sm:w-[80%]  lg:text-3xl flex max-sm:text-xl uppercase">

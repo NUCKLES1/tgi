@@ -19,7 +19,7 @@
   }
 }
 
-.background{
+.background {
   backdrop-filter: blur(5px);
   filter: url(#glass-distortion);
   isolation: isolate;
@@ -32,71 +32,116 @@
   transition: transform 0.3s ease-in-out;
 }
 
+@media (width < 40rem /* 640px */) {
+  .item:hover {
+    transform: none;
+    margin-right: none;
+    margin-left: none;
+    transition: transform 0.3s ease-in-out;
+  }
+}
+
 .img-border {
-  border-radius: .25rem;
-  -webkit-clip-path: polygon(0 0,0 0,100% 0,100% 0,100% calc(100% - 15px),calc(100% - 15px) 100%,15px 100%,0 100%);
-  clip-path: polygon(0 0,0 0,100% 0,100% 0,100% calc(100% - 15px),calc(100% - 15px) 100%,15px 100%,0 100%);
+  border-radius: 0.25rem;
+  -webkit-clip-path: polygon(
+    0 0,
+    0 0,
+    100% 0,
+    100% 0,
+    100% calc(100% - 15px),
+    calc(100% - 15px) 100%,
+    15px 100%,
+    0 100%
+  );
+  clip-path: polygon(
+    0 0,
+    0 0,
+    100% 0,
+    100% 0,
+    100% calc(100% - 15px),
+    calc(100% - 15px) 100%,
+    15px 100%,
+    0 100%
+  );
   border: 0 solid;
   overflow: hidden;
 }
 .button1 {
-  border-radius: .25rem;
+  border-radius: 0.25rem;
   font-style: normal;
   font-weight: 400;
   color: #fff;
-  -webkit-clip-path: polygon(0 0,0 0,100% 0,100% 0,100% calc(100% - 15px),calc(100% - 15px) 100%,15px 100%,0 100%);
-  clip-path: polygon(0 0,0 0,100% 0,100% 0,100% calc(100% - 15px),calc(100% - 15px) 100%,15px 100%,0 100%);
+  -webkit-clip-path: polygon(
+    0 0,
+    0 0,
+    100% 0,
+    100% 0,
+    100% calc(100% - 15px),
+    calc(100% - 15px) 100%,
+    15px 100%,
+    0 100%
+  );
+  clip-path: polygon(
+    0 0,
+    0 0,
+    100% 0,
+    100% 0,
+    100% calc(100% - 15px),
+    calc(100% - 15px) 100%,
+    15px 100%,
+    0 100%
+  );
   font-size: 0.7rem;
   letter-spacing: 1.2px;
-  transition: .2s .1s;
-  background-image: linear-gradient(90deg,#221f1f,#3b3941);
+  transition: 0.2s 0.1s;
+  background-image: linear-gradient(90deg, #221f1f, #3b3941);
   border: 0 solid;
   overflow: hidden;
 }
 
 .button1:hover {
   cursor: pointer;
-  transition: all .3s ease-in;
+  transition: all 0.3s ease-in;
   padding-right: 30px;
   padding-left: 30px;
 }
 
 .btnn {
- padding: 1.1em 2em;
- background: none;
- font-size: 15px;
- color: white;
- cursor: pointer;
- position: relative;
- overflow: hidden;
- transition: all 0.3s;
- background-color: #68676c;
- font-weight: bolder;
+  padding: 1.1em 2em;
+  background: none;
+  font-size: 15px;
+  color: white;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s;
+  background-color: #68676c;
+  font-weight: bolder;
 }
 
 .btnn:before {
- content: "";
- position: absolute;
- width: 100px;
- height: 120%;
- background-color: #000000;
- top: 50%;
- transform: skewX(30deg) translate(-150%, -50%);
- transition: all 0.5s;
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 120%;
+  background-color: #000000;
+  top: 50%;
+  transform: skewX(30deg) translate(-150%, -50%);
+  transition: all 0.5s;
 }
 
 .btnn:hover {
- background-color: #4cc9f0;
- color: #fff;
+  background-color: #4cc9f0;
+  color: #fff;
 }
 
 .btnn:hover::before {
- transform: skewX(30deg) translate(150%, -50%);
- transition-delay: 0.1s;
+  transform: skewX(30deg) translate(150%, -50%);
+  transition-delay: 0.1s;
 }
 
 .btnn:active {
- transform: scale(0.9);
+  transform: scale(0.9);
 }
 
 .button2 {
@@ -131,7 +176,6 @@
 .button2:hover span {
   width: 30px;
 }
-
 
 .body {
   background: linear-gradient(
@@ -178,42 +222,83 @@
   background: rgba(255, 255, 255, 0.25);
 }
 
+.hexagon {
+  width: 120px;
+  height: 69.28px;
+  background: #000000;
+  position: relative;
+  animation: spin 15s linear infinite;
+}
 
-  .hexagon {
-    width: 120px;
-    height: 69.28px;
-    background: #000000;
-    position: relative;
-    animation: spin 15s linear infinite;
+.hexagon::before,
+.hexagon::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  border-left: 60px solid transparent;
+  border-right: 60px solid transparent;
+}
+
+.hexagon::before {
+  bottom: 100%;
+  border-bottom: 34.64px solid #000000;
+}
+
+.hexagon::after {
+  top: 100%;
+  border-top: 34.64px solid #000000;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+
+.loader-text {
+  position: relative;
+}
+
+.loader-text span {
+  position: absolute;
+  color: #fff;
+  transform: translate(-50%, -50%);
+  font-size: 38px;
+  letter-spacing: 5px;
+}
+
+.loader-text span:nth-child(1) {
+  color: transparent;
+  -webkit-text-stroke: 0.3px rgb(128, 198, 255);
+}
+
+.loader-text span:nth-child(2) {
+  color: rgb(128, 198, 255);
+  -webkit-text-stroke: 1px rgb(128, 198, 255);
+  animation: uiverse723 3s ease-in-out infinite;
+}
+
+@keyframes uiverse723 {
+  0%, 100% {
+    clip-path: polygon(0% 45%, 15% 44%, 32% 50%, 
+     54% 60%, 70% 61%, 84% 59%, 100% 52%, 100% 100%, 0% 100%);
   }
 
-  .hexagon::before,
-  .hexagon::after {
-    content: "";
-    position: absolute;
-    width: 0;
-    border-left: 60px solid transparent;
-    border-right: 60px solid transparent;
+  50% {
+    clip-path: polygon(0% 60%, 16% 65%, 34% 66%, 
+     51% 62%, 67% 50%, 84% 45%, 100% 46%, 100% 100%, 0% 100%);
   }
+}
 
-  .hexagon::before {
-    bottom: 100%;
-    border-bottom: 34.64px solid #000000;
-  }
 
-  .hexagon::after {
-    top: 100%;
-    border-top: 34.64px solid #000000;
-  }
 
-  @keyframes spin {
-    from {
-      transform: rotate(0deg);
-    }
-    to {
-      transform: rotate(360deg);
-    }
-  }
+
+
 
 .socket {
   width: 400px;
@@ -280,8 +365,8 @@
 .gel {
   height: 30px;
   width: 30px;
-  transition: all .3s;
-  -webkit-transition: all .3s;
+  transition: all 0.3s;
+  -webkit-transition: all 0.3s;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -300,8 +385,8 @@
 .gel1 {
   height: 30px;
   width: 30px;
-  transition: all .5s;
-  -webkit-transition: all .5s;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -512,76 +597,76 @@
   animation-name: pulse00;
   animation-duration: 2s;
   animation-iteration-count: infinite;
-  animation-delay: .2s;
+  animation-delay: 0.2s;
   -webkit-animation-name: pulse00;
   -webkit-animation-duration: 2s;
   -webkit-animation-iteration-count: infinite;
-  -webkit-animation-delay: .2s;
+  -webkit-animation-delay: 0.2s;
 }
 .r1o {
   animation-name: pulse00;
   animation-duration: 5s;
   animation-iteration-count: infinite;
-  animation-delay: .5s;
+  animation-delay: 0.5s;
   -webkit-animation-name: pulse00;
   -webkit-animation-duration: 5s;
   -webkit-animation-iteration-count: infinite;
-  -webkit-animation-delay: .5s;
+  -webkit-animation-delay: 0.5s;
 }
 
 .r2 {
   animation-name: pulse00;
   animation-duration: 2s;
   animation-iteration-count: infinite;
-  animation-delay: .4s;
+  animation-delay: 0.4s;
   -webkit-animation-name: pulse00;
   -webkit-animation-duration: 2s;
   -webkit-animation-iteration-count: infinite;
-  -webkit-animation-delay: .4s;
+  -webkit-animation-delay: 0.4s;
 }
 
 .r3 {
   animation-name: pulse00;
   animation-duration: 2s;
   animation-iteration-count: infinite;
-  animation-delay: .6s;
+  animation-delay: 0.6s;
   -webkit-animation-name: pulse00;
   -webkit-animation-duration: 2s;
   -webkit-animation-iteration-count: infinite;
-  -webkit-animation-delay: .6s;
+  -webkit-animation-delay: 0.6s;
 }
 
 .r1 > .hex-brick {
   animation-name: fade00;
   animation-duration: 2s;
   animation-iteration-count: infinite;
-  animation-delay: .2s;
+  animation-delay: 0.2s;
   -webkit-animation-name: fade00;
   -webkit-animation-duration: 2s;
   -webkit-animation-iteration-count: infinite;
-  -webkit-animation-delay: .2s;
+  -webkit-animation-delay: 0.2s;
 }
 
 .r2 > .hex-brick {
   animation-name: fade00;
   animation-duration: 2s;
   animation-iteration-count: infinite;
-  animation-delay: .4s;
+  animation-delay: 0.4s;
   -webkit-animation-name: fade00;
   -webkit-animation-duration: 2s;
   -webkit-animation-iteration-count: infinite;
-  -webkit-animation-delay: .4s;
+  -webkit-animation-delay: 0.4s;
 }
 
 .r3 > .hex-brick {
   animation-name: fade00;
   animation-duration: 2s;
   animation-iteration-count: infinite;
-  animation-delay: .6s;
+  animation-delay: 0.6s;
   -webkit-animation-name: fade00;
   -webkit-animation-duration: 2s;
   -webkit-animation-iteration-count: infinite;
-  -webkit-animation-delay: .6s;
+  -webkit-animation-delay: 0.6s;
 }
 
 @keyframes pulse00 {
@@ -614,18 +699,6 @@
     background: #353535;
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
 
 .loaderi {
   scale: 6;

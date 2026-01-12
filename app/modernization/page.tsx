@@ -3,13 +3,14 @@ import { FaAws } from "react-icons/fa6";
 import { IoLogoFirebase } from "react-icons/io5";
 import { GiFire } from "react-icons/gi";
 import Percentages from "../modernization/Percentages";
+import Expertise from "../modernization/Expertise";
 import Footer from "../components/Footer";
 
 const page = () => {
   return (
     <div className="bg-gradient-to-r from-gray-100 via-yellow-50 to-blue-200 pt-20">
       <div className="lg:flex px-20 max-sm:px-6">
-        <div className="lg:w-1/2 flex flex-col gap-10 pr-20 max-sm:pr-10 mt-20">
+        <div className="lg:w-1/2 flex flex-col gap-10 pr-20 max-sm:pr-10 mt-20 max-sm:mt-10">
           <p className="uppercase text-gray-700">
             PLATFORM MODERNIZATION SERVICES
           </p>
@@ -52,7 +53,7 @@ const page = () => {
         </div>
       </div>
       <div className="w-full bg-[#232020] h-22 max-sm:h-auto mt-20">
-        <ul className="px-20 max-sm:px-6  grid max-sm:grid-cols-2">
+        <ul className="px-20 flex max-sm:px-6 max-sm:grid max-sm:grid-cols-2">
           <li className="border-r text-gray-400 py-6 text-center w-80 max-sm:w-40 pr-10">
             Trusted by 160+ clients
           </li>
@@ -71,6 +72,7 @@ const page = () => {
         </ul>
       </div>
       <Percentages />
+      <Expertise />
       <Footer />
     </div>
   );
