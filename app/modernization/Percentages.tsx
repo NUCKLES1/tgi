@@ -16,7 +16,7 @@ const Percentages = () => {
           </h1>
         </div>
         <div className="pb-20">
-        <div className="grid grid-cols-3 w-full max-sm:gap-10  lg:border-r lg:border-gray-700">
+        <div className="grid grid-cols-3 max-sm:grid-cols-1 w-full max-sm:gap-10  lg:border-r lg:border-gray-700">
           <div className="lg:border-l max-sm:border-t max-sm:pt-8 border-gray-600 px-10 md:border-l">
             <h1 className="text-3xl text-gray-700">01</h1>
             <p className="pt-20 text-2xl text-gray-700">
