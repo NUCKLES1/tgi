@@ -85,6 +85,7 @@ const Effective = () => {
                className="px-4 w-full bg-blue-200 h-auto pb-6 rounded-sm pt-8 item"
             >
               <div>
+                  <Link href="/webdevelop">
                 <div className="max-sm:flex max-sm:gap-4">
                   <h1 className="text-3xl flex text-gray-700 max-sm:text-2xl">
                     {" "}
@@ -105,6 +106,7 @@ const Effective = () => {
                 <button className=" mt-10 text-white bg-[#484343] w-full lg:hidden py-3">
                   Learn More
                 </button>
+                </Link>
               </div>
             </motion.div>
             <motion.div

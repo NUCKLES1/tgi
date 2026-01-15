@@ -2,8 +2,8 @@ import React from "react";
 import { FaAws } from "react-icons/fa6";
 import { IoLogoFirebase } from "react-icons/io5";
 import { GiFire } from "react-icons/gi";
-import Percentages from "./Percentages";
-import Expertise from "../modernization/Expertise";
+import Percentages from "../webdevelop/Percentages";
+import Expertise from "../webdevelop/Expertise";
 import Footer from "../components/Footer";
 
 const page = () => {
