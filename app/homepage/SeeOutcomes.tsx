@@ -73,6 +73,7 @@ const SeeOutcomes = () => {
                 <BackgroundVideo
                   src="https://res.cloudinary.com/dbc4muo4t/video/upload/v1768491895/pro9_lsxiua.mp4"
                   className="w-full"
+                  autoPlay muted loop playsInline
                 />
                 <div className="p-4 text-gray-800">
                   <h1 className="text-xl underline">Augen</h1>
@@ -113,6 +114,7 @@ const SeeOutcomes = () => {
                 <BackgroundVideo
                   src="https://res.cloudinary.com/dbc4muo4t/video/upload/v1768493203/pro11_zl28iz.mp4"
                   className="w-full"
+                  autoPlay muted loop playsInline
                 />
                 <div className="p-4 text-gray-800">
                   <h1 className="text-xl underline">Lovi</h1>
@@ -153,7 +155,7 @@ const SeeOutcomes = () => {
                 <BackgroundVideo
                   src=" https://res.cloudinary.com/dbc4muo4t/video/upload/v1768492671/pro10_jfpm8v.mp4"
                   className="w-full"
-                />
+                 autoPlay muted loop playsInline/>
                 <div className="p-4 text-gray-800">
                   <h1 className="text-xl underline">Silencio</h1>
                   <h2>
