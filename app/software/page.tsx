@@ -1,10 +1,9 @@
 import React from "react";
-import Link from "next/link";
 import { FaAws } from "react-icons/fa6";
 import { IoLogoFirebase } from "react-icons/io5";
 import { GiFire } from "react-icons/gi";
-import Percentages from "../webdevelop/Percentages";
-import Expertise from "../webdevelop/Expertise";
+import Percentage from "../software/Percentage";
+import Expertise from "../software/Expertise";
 import Footer from "../components/Footer";
 
 const page = () => {
@@ -12,19 +11,16 @@ const page = () => {
     <div className="bg-gradient-to-r from-gray-100 via-yellow-50 to-blue-200 pt-20 overflow-hidden">
       <div className="lg:flex px-20 max-sm:px-6">
         <div className="lg:w-1/2 flex flex-col gap-10 pr-20 max-sm:pr-10 mt-20 max-sm:mt-10">
-          <p className="uppercase text-gray-700">AI enablement</p>
+          <p className="uppercase text-gray-700">SOFTWARE DELIVERY</p>
           <h1 className="text-5xl text-gray-600 max-sm:text-4xl">
-            Our AI engineers will join your team for a month to help you adopt,
-            optimize, and measure the impact of AI-powered development.
+            Take on any new development opportunity
           </h1>
           <p className="text-gray-700">
-            Fast-track your team into AI-powered development
+            Modern tech stack that enables effective delivery
           </p>
-          <Link href="https://wa.link/4jye7i">
-            <button className="button2 bg-[#232020] w-60">
-              Describe your project
-            </button>
-          </Link>
+          <button className="button2 bg-[#232020] w-60">
+            Describe your project
+          </button>
         </div>
         <div className="lg:w-1/2 ">
           <div className="loaderi mt-58 mx-auto">
@@ -71,7 +67,7 @@ const page = () => {
           </li>
         </ul>
       </div>
-      <Percentages />
+      <Percentage />
       <Expertise />
       <Footer />
     </div>

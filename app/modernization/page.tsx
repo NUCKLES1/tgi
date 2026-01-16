@@ -8,7 +8,7 @@ import Footer from "../components/Footer";
 
 const page = () => {
   return (
-    <div className="bg-gradient-to-r from-gray-100 via-yellow-50 to-blue-200 pt-20">
+    <div className="bg-gradient-to-r from-gray-100 via-yellow-50 to-blue-200 pt-20 overflow-hidden">
       <div className="lg:flex px-20 max-sm:px-6">
         <div className="lg:w-1/2 flex flex-col gap-10 pr-20 max-sm:pr-10 mt-20 max-sm:mt-10">
           <p className="uppercase text-gray-700">

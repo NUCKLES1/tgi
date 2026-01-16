@@ -53,7 +53,7 @@ const Effective = () => {
               ref={ref1}
               className="px-4 w-full bg-amber-200 h-auto pb-6 rounded-sm pt-8 item"
             >
-              <div >
+              <div>
                 <Link href="/modernization">
                   <div className="max-sm:flex max-sm:gap-4">
                     <h1 className="text-3xl flex text-gray-700 max-sm:text-2xl">
@@ -82,30 +82,30 @@ const Effective = () => {
               animate={isInView2 ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.5, ease: "easeOut" }}
               ref={ref2}
-               className="px-4 w-full bg-blue-200 h-auto pb-6 rounded-sm pt-8 item"
+              className="px-4 w-full bg-blue-200 h-auto pb-6 rounded-sm pt-8 item"
             >
               <div>
-                  <Link href="/webdevelop">
-                <div className="max-sm:flex max-sm:gap-4">
-                  <h1 className="text-3xl flex text-gray-700 max-sm:text-2xl">
-                    {" "}
-                    02 <IoArrowForwardOutline className="mt-1" />
-                  </h1>
-                  <h1 className="text-3xl text-gray-700 max-sm:text-2xl">
-                    {" "}
-                    WEB <br /> DEVELOPMENT
-                  </h1>
-                </div>
-                <p className="text-gray-700 mt-26 max-sm:mt-10 text-lg">
-                  Our web development process is built on professionalism,
-                  precision, and performance. We design and develop websites
-                  using modern, industry-standard technologies that ensure
-                  reliability, scalability, and long-term value for your
-                  business.
-                </p>
-                <button className=" mt-10 text-white bg-[#484343] w-full lg:hidden py-3">
-                  Learn More
-                </button>
+                <Link href="/webdevelop">
+                  <div className="max-sm:flex max-sm:gap-4">
+                    <h1 className="text-3xl flex text-gray-700 max-sm:text-2xl">
+                      {" "}
+                      02 <IoArrowForwardOutline className="mt-1" />
+                    </h1>
+                    <h1 className="text-3xl text-gray-700 max-sm:text-2xl">
+                      {" "}
+                      WEB <br /> DEVELOPMENT
+                    </h1>
+                  </div>
+                  <p className="text-gray-700 mt-26 max-sm:mt-10 text-lg">
+                    Our web development process is built on professionalism,
+                    precision, and performance. We design and develop websites
+                    using modern, industry-standard technologies that ensure
+                    reliability, scalability, and long-term value for your
+                    business.
+                  </p>
+                  <button className=" mt-10 text-white bg-[#484343] w-full lg:hidden py-3">
+                    Learn More
+                  </button>
                 </Link>
               </div>
             </motion.div>
@@ -114,26 +114,28 @@ const Effective = () => {
               animate={isInView3 ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.5, ease: "easeOut" }}
               ref={ref3}
-               className="px-4 w-full bg-purple-200 h-auto pb-6 rounded-sm pt-8 item"
+              className="px-4 w-full bg-purple-200 h-auto pb-6 rounded-sm pt-8 item"
             >
               <div>
-                <div className="max-sm:flex max-sm:gap-4">
-                  <h1 className="text-3xl flex text-gray-700 max-sm:text-2xl ">
-                    {" "}
-                    03 <IoArrowForwardOutline className="mt-1" />
-                  </h1>
-                  <h1 className="text-3xl text-gray-700 max-sm:text-2xl">
-                    {" "}
-                    SOFTWARE <br /> DELIVERY
-                  </h1>
-                </div>
-                <p className="text-gray-700 mt-26 max-sm:mt-10 text-lg">
-                  Build, upgrade or rearchitect your digital products on time
-                  with the help of a self-managed engineering team.
-                </p>
-                <button className=" mt-10 text-white bg-[#484343] w-full lg:hidden py-3">
-                  Learn More
-                </button>
+                <Link href="/software">
+                  <div className="max-sm:flex max-sm:gap-4">
+                    <h1 className="text-3xl flex text-gray-700 max-sm:text-2xl ">
+                      {" "}
+                      03 <IoArrowForwardOutline className="mt-1" />
+                    </h1>
+                    <h1 className="text-3xl text-gray-700 max-sm:text-2xl">
+                      {" "}
+                      SOFTWARE <br /> DELIVERY
+                    </h1>
+                  </div>
+                  <p className="text-gray-700 mt-26 max-sm:mt-10 text-lg">
+                    Build, upgrade or rearchitect your digital products on time
+                    with the help of a self-managed engineering team.
+                  </p>
+                  <button className=" mt-10 text-white bg-[#484343] w-full lg:hidden py-3">
+                    Learn More
+                  </button>
+                </Link>
               </div>
             </motion.div>
           </div>

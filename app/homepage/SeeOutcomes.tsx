@@ -12,6 +12,30 @@ const SeeOutcomes = () => {
 
   const isInView = useInView(ref, { once: true, margin: "-50px" });
 
+  const ref1 = useRef(null);
+  
+    const isInView1 = useInView(ref1, { once: true, margin: "-50px" });
+    const ref2 = useRef(null);
+  
+    const isInView2 = useInView(ref2, { once: true, margin: "-50px" });
+  
+    const ref3 = useRef(null);
+    const isInView3 = useInView(ref3, { once: true, margin: "-50px" });
+    const ref4 = useRef(null);
+    const isInView4 = useInView(ref4, { once: true, margin: "-50px" });
+    const ref5 = useRef(null);
+    const isInView5 = useInView(ref5, { once: true, margin: "-50px" });
+    const ref6 = useRef(null);
+    const isInView6 = useInView(ref6, { once: true, margin: "-50px" });
+    const ref7 = useRef(null);
+    const isInView7 = useInView(ref7, { once: true, margin: "-50px" });
+    const ref8 = useRef(null);
+    const isInView8 = useInView(ref8, { once: true, margin: "-50px" });
+    const ref9 = useRef(null);
+    const isInView9 = useInView(ref9, { once: true, margin: "-50px" });
+    const ref10 = useRef(null);
+    const isInView10 = useInView(ref10, { once: true, margin: "-50px" });
+
   return (
     <div className="h-auto w-full px-10 pt-30 max-sm:px-2">
       <div>
@@ -38,13 +62,18 @@ const SeeOutcomes = () => {
               <h1 className=" pb-10 text-gray-700">
                 60+ businesses made their product competitive with our help
               </h1>
+              <Link href="https://wa.link/4jye7i">
               <button className="btnn">Go to cases</button>
+              </Link>
             </motion.div>
           </div>
         </div>
         <div className="h-auto w-full lgborder-l lg:border-r mt-10">
           <div className="w-full h-auto grid md:grid-col-2 gap-12">
-            <div className="bg-white pt-4 px-2 pb-8 rounded-sm">
+            <motion.div className="bg-white pt-4 px-2 pb-8 rounded-sm" initial={{ opacity: 0, y: 30 }}
+              animate={isInView1 ? { opacity: 1, y: 0 } : {}}
+              transition={{ duration: 0.5, ease: "easeOut" }}
+              ref={ref1}>
               <Link href={"https://www.soilboy.sg/"}>
                 <Image src={pro3} width={500} height={400} alt="" />
                 <div className="p-4 text-gray-800">
@@ -56,8 +85,11 @@ const SeeOutcomes = () => {
                   <p></p>
                 </div>
               </Link>
-            </div>
-            <div className="bg-white pt-4 px-2 pb-8 rounded-sm">
+            </motion.div>
+            <motion.div className="bg-white pt-4 px-2 pb-8 rounded-sm" initial={{ opacity: 0, y: 30 }}
+              animate={isInView2 ? { opacity: 1, y: 0 } : {}}
+              transition={{ duration: 0.5, ease: "easeOut" }}
+              ref={ref2}>
               <Image src={pro1} width={600} height={400} alt="" />
               <div className="p-4 text-gray-800">
                 <h1 className="text-xl underline">EZYShop</h1>
@@ -67,24 +99,33 @@ const SeeOutcomes = () => {
                 </h2>
                 <p></p>
               </div>
-            </div>
-            <div className="bg-white pt-4 px-2 pb-8 rounded-sm">
+            </motion.div>
+            <motion.div className="bg-white pt-4 px-2 pb-8 rounded-sm" initial={{ opacity: 0, y: 30 }}
+              animate={isInView3 ? { opacity: 1, y: 0 } : {}}
+              transition={{ duration: 0.5, ease: "easeOut" }}
+              ref={ref3}>
               <Link href={"https://augen.pro/"}>
                 <BackgroundVideo
                   src="https://res.cloudinary.com/dbc4muo4t/video/upload/v1768491895/pro9_lsxiua.mp4"
                   className="w-full"
                   autoPlay muted loop playsInline
                 />
-                <div className="p-4 text-gray-800">
+                <motion.div className="p-4 text-gray-800" initial={{ opacity: 0, y: 30 }}
+              animate={isInView4 ? { opacity: 1, y: 0 } : {}}
+              transition={{ duration: 0.5, ease: "easeOut" }}
+              ref={ref4}>
                   <h1 className="text-xl underline">Augen</h1>
                   <h2>
                    help achieved a 90% increase in user engagement through the support of our team website redesign and development.
                   </h2>
                   <p></p>
-                </div>
+                </motion.div>
               </Link>
-            </div>
-            <div className="bg-white pt-4 px-2 pb-8 rounded-sm">
+            </motion.div>
+            <motion.div className="bg-white pt-4 px-2 pb-8 rounded-sm" initial={{ opacity: 0, y: 30 }}
+              animate={isInView5 ? { opacity: 1, y: 0 } : {}}
+              transition={{ duration: 0.5, ease: "easeOut" }}
+              ref={ref5}>
               <Link href={"https://www.supernaturalkitchen.com/"}>
                 <Image src={pro4} width={600} height={400} alt="" />
                 <div className="p-4 text-gray-800">
@@ -95,9 +136,13 @@ const SeeOutcomes = () => {
                   <p></p>
                 </div>
               </Link>
-            </div>
+            </motion.div>
 
-            <div className="bg-white pt-4 px-2 pb-8 rounded-sm">
+            <motion.div className="bg-white pt-4 px-2 pb-8 rounded-sm"
+            initial={{ opacity: 0, y: 30 }}
+              animate={isInView6 ? { opacity: 1, y: 0 } : {}}
+              transition={{ duration: 0.5, ease: "easeOut" }}
+              ref={ref6}>
               <Link href={"https://www.insteon.com/"}>
                 <Image src={pro5} width={600} height={400} alt="" />
                 <div className="p-4 text-gray-800">
@@ -108,8 +153,11 @@ const SeeOutcomes = () => {
                   <p></p>
                 </div>
               </Link>
-            </div>
-            <div className="bg-white pt-4 px-2 pb-8 rounded-sm">
+            </motion.div>
+            <motion.div className="bg-white pt-4 px-2 pb-8 rounded-sm" initial={{ opacity: 0, y: 30 }}
+              animate={isInView7 ? { opacity: 1, y: 0 } : {}}
+              transition={{ duration: 0.5, ease: "easeOut" }}
+              ref={ref7}>
               <Link href={"https://lovi.care/"}>
                 <BackgroundVideo
                   src="https://res.cloudinary.com/dbc4muo4t/video/upload/v1768493203/pro11_zl28iz.mp4"
@@ -124,8 +172,11 @@ const SeeOutcomes = () => {
                   <p></p>
                 </div>
               </Link>
-            </div>
-            <div className="bg-white pt-4 px-2 pb-8 rounded-sm">
+            </motion.div>
+            <motion.div className="bg-white pt-4 px-2 pb-8 rounded-sm" initial={{ opacity: 0, y: 30 }}
+              animate={isInView8 ? { opacity: 1, y: 0 } : {}}
+              transition={{ duration: 0.5, ease: "easeOut" }}
+              ref={ref8}>
               <Link href={"https://emlid.com/"}>
                 <Image src={pro7} width={600} height={400} alt="" />
                 <div className="p-4 text-gray-800">
@@ -137,8 +188,11 @@ const SeeOutcomes = () => {
                   <p></p>
                 </div>
               </Link>
-            </div>
-            <div className="bg-white pt-4 px-2 pb-8 rounded-sm">
+            </motion.div>
+            <motion.div className="bg-white pt-4 px-2 pb-8 rounded-sm" initial={{ opacity: 0, y: 30 }}
+              animate={isInView9 ? { opacity: 1, y: 0 } : {}}
+              transition={{ duration: 0.5, ease: "easeOut" }}
+              ref={ref9}>
               <Link href={"https://afoxevent.com/"}>
                 <Image src={pro6} width={600} height={400} alt="" />
                 <div className="p-4 text-gray-800">
@@ -149,8 +203,11 @@ const SeeOutcomes = () => {
                   <p></p>
                 </div>
               </Link>
-            </div>
-            <div className="bg-white pt-4 px-2 pb-8 rounded-sm">
+            </motion.div>
+            <motion.div className="bg-white pt-4 px-2 pb-8 rounded-sm" initial={{ opacity: 0, y: 30 }}
+              animate={isInView10 ? { opacity: 1, y: 0 } : {}}
+              transition={{ duration: 0.5, ease: "easeOut" }}
+              ref={ref10}>
               <Link href={"https://silencio.es/"}>
                 <BackgroundVideo
                   src=" https://res.cloudinary.com/dbc4muo4t/video/upload/v1768492671/pro10_jfpm8v.mp4"
@@ -164,7 +221,7 @@ const SeeOutcomes = () => {
                   <p></p>
                 </div>
               </Link>
-            </div>
+            </motion.div>
           </div>
         </div>
       </div>

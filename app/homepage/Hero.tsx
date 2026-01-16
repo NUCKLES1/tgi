@@ -2,6 +2,7 @@
 
 import React, { useRef } from "react";
 import Image from "next/image";
+import Link from "next/link";
 import { motion, useInView } from "framer-motion";
 import { pc, tab, phone } from "@/app/components/Export";
 
@@ -59,9 +60,7 @@ const Hero = () => {
             that enhances product credibility and builds trust with customers.
           </p>
         </motion.div>
-        <button className="mt-8 bg-blue-500 text-white px-10 py-3 rounded-4xl hover:bg-blue-600 lg:font-bold">
-          React Out
-        </button>
+            <button className="btnn px-6 mt-6 max-sm:w-full">    <Link href="https://wa.link/4jye7i">Get in touch</Link></button>
       </div>
     </div>
   );

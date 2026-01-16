@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 import Logo from "./Logo";
 import { IoArrowForwardOutline } from "react-icons/io5";
 
@@ -16,7 +17,7 @@ const Footer = () => {
             <h1 className=" pb-10 text-gray-700">
               Explain what you need with our experts
             </h1>
-            <button className="btnn px-6 max-sm:w-full">Get in touch</button>
+            <button className="btnn px-6 max-sm:w-full">    <Link href="https://wa.link/4jye7i">Get in touch</Link></button>
           </div>
         </div>
         <div className="loaderi mt-28 mx-auto">
@@ -68,7 +69,7 @@ const Footer = () => {
             <div className="text-white w-100 text-left uppercase flex flex-col max-sm:gap-5 gap-26 max-sm:mt-12">
               <div className="flex md:mt-10">
                 <IoArrowForwardOutline className="w-10 max-sm:text-3xl lg:mt-2 max-sm:ml-8" />
-                <p className="text-2xl max-sm:text-xl">Get in Touch</p>
+                <p className="text-2xl max-sm:text-xl">    <Link href="https://wa.link/4jye7i">Get in Touch </Link></p>
               </div>
               <div>
                 <ul className="text-gray-600  pl-10">

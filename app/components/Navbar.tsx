@@ -67,7 +67,7 @@ const Navbar = () => {
         }}
         className="absolute overflow-hidden bg-black bg-opacity-[0.5] right-0 h-screen z-120 rounded-tl-3xl rounded-bl-3xl bottom-0"
       >
-        <div className="w-full px-8 md:px-4 pt-6">
+        <div className="w-full px-8 md:px-4 pt-18">
           <div
             onClick={toggleStyle}
             className="flex gap-3 text-white text-xl font-bold cursor-pointer justify-end"

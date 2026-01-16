@@ -5,6 +5,7 @@ import Link from "next/link";
 import { motion, useInView } from "framer-motion";
 import Question from "../homepage/Questions";
 import { IoArrowForwardOutline } from "react-icons/io5";
+import Review from "./Review";
 
 const Flexible = () => {
   const ref = useRef(null);
@@ -284,6 +285,7 @@ const Flexible = () => {
           })}
         </div>
       </div>
+
       <Question />
     </div>
   );

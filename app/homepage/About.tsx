@@ -73,7 +73,9 @@ const About = () => {
                 </h1>
 
                 <button className="button1 mt-20 px-12.5 max-sm:px-32 py-4">
-                  Explain your project
+                  <Link href="https://wa.link/4jye7i">
+                    Explain your project
+                  </Link>
                 </button>
               </div>
             </motion.div>
