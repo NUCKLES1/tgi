@@ -3,8 +3,8 @@ import Link from "next/link";
 import { FaAws } from "react-icons/fa6";
 import { IoLogoFirebase } from "react-icons/io5";
 import { GiFire } from "react-icons/gi";
-import Percentages from "../webdevelop/Percentages";
-import Expertise from "../webdevelop/Expertise";
+import Percentages from "./Percentages";
+import Expertise from "./Expertise";
 import Footer from "../components/Footer";
 
 const page = () => {
@@ -55,7 +55,7 @@ const page = () => {
       <div className="w-full bg-[#232020] h-22 max-sm:h-auto mt-20">
         <ul className="px-20 flex max-sm:px-6 max-sm:grid max-sm:grid-cols-2">
           <li className="border-r text-gray-400 py-6 text-center w-80 max-sm:w-40 pr-10">
-            Trusted by 160+ clients
+           160+ clients
           </li>
           <li className="py-6 px-30 max-sm:px-14 border-r text-gray-300">
             <FaAws className=" w-10 h-10" />

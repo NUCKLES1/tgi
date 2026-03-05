@@ -11,7 +11,7 @@ const Section = () => {
 
   return (
     <div>
-      <div className="w-full h-screen max-sm:h-auto flex justify-center items-center px-60 max-sm:px-6  bg-gradient-to-r from-gray-100 via-yellow-50 to-blue-200 max-sm:py-20">
+      <div className="w-full h-screen max-sm:h-auto flex justify-center items-center lg:px-60 md:pl-20 px-6  bg-gradient-to-r from-gray-100 via-yellow-50 to-blue-200 py-20">
         <div>
               <motion.div
           initial={{ opacity: 0, y: 30 }}

@@ -18,7 +18,7 @@ const About = () => {
 
   return (
     <div>
-      <div className="w-full  lg:flex">
+      <div className="w-full lg:flex md:flex md:mt-20">
         <div className="w-1/2 h-full bg-amber-200 max-sm:w-full pb-19">
           <div className="p-20 max-sm:p-10">
             <motion.div
@@ -38,8 +38,8 @@ const About = () => {
           </div>
         </div>
 
-        <div className="w-1/2 max-sm:w-full h-full bg-gradient-to-t from-amber-100  to-amber-200 max-sm:bg-gradient-to-l max-sm:from-amber-100 max-sm:-mt-10  max-sm:to-amber-200 pb-30 max-sm:pb-20">
-          <div className="pb-10 pt-10 max-sm:m-6 m-10 lg:border-b">
+        <div className="w-1/2 max-sm:w-full h-full bg-gradient-to-t from-amber-100  to-amber-200 max-sm:bg-gradient-to-l max-sm:from-amber-100 max-sm:-mt-10 md:pb-14  max-sm:to-amber-200 pb-30 max-sm:pb-20">
+          <div className="pb-10 pt-10 md:pt-2 max-sm:m-6 m-10 lg:border-b">
             <motion.div
               initial={{ opacity: 0, y: 30 }}
               animate={isInView1 ? { opacity: 1, y: 0 } : {}}
@@ -49,13 +49,13 @@ const About = () => {
               <div className="lg:hidden">
                 <h1>ABOUT US</h1>
               </div>
-              <h1 className="text-4xl max-sm:text-2xl text-gray-800 lg:pr-20 max-sm:mt-4">
+              <h1 className="lg:text-4xl md:text-2xl text-2xl text-gray-800 lg:pr-20 max-sm:mt-4">
                 “Let us build your website, to expand your product reach and
                 services”
               </h1>
             </motion.div>
           </div>
-          <div className="max-sm:px-4 px-10 justify-between lg:flex">
+          <div className="max-sm:px-4 px-10 justify-between lg:flex md:-mt-10">
             <div className="max-sm:hidden">
               <h1>ABOUT US</h1>
             </div>

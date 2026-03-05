@@ -53,9 +53,9 @@ const page = () => {
         </div>
       </div>
       <div className="w-full bg-[#232020] h-22 max-sm:h-auto mt-20">
-        <ul className="px-20 flex max-sm:px-6 max-sm:grid max-sm:grid-cols-2">
-          <li className="border-r text-gray-400 py-6 text-center w-80 max-sm:w-40 pr-10">
-            Trusted by 160+ clients
+        <ul className="px-20 flex md:px-10 max-sm:px-6 max-sm:grid max-sm:grid-cols-2">
+          <li className="border-r text-gray-400 py-6 text-center w-80 md:px-12 md:w-100 max-sm:w-40 pr-10">
+          160+ clients
           </li>
           <li className="py-6 px-30 max-sm:px-14 border-r text-gray-300">
             <FaAws className=" w-10 h-10" />

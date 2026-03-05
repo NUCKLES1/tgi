@@ -69,7 +69,7 @@ const SeeOutcomes = () => {
           </div>
         </div>
         <div className="h-auto w-full lgborder-l lg:border-r mt-10">
-          <div className="w-full h-auto grid md:grid-col-2 gap-12">
+          <div className="w-full h-auto grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-12 max-md:gap-4">
             <motion.div className="bg-white pt-4 px-2 pb-8 rounded-sm" initial={{ opacity: 0, y: 30 }}
               animate={isInView1 ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.5, ease: "easeOut" }}

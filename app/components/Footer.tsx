@@ -51,7 +51,7 @@ const Footer = () => {
               <h1 className="text-[15rem] max-sm:hidden leading-50 font-bold text-gray-500 loader-text">
                 TGI
               </h1>
-              <div className="lg:hidden ml-20 justify-start gap-10 flex flex-col">
+              <div className="lg:hidden md:hidden ml-20 justify-start gap-10 flex flex-col">
               <div className="loader-text">
                 <span>The</span>
                 <span>The</span>
@@ -81,7 +81,7 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div className="w-full lg:flex justify-between">
+        <div className="w-full lg:flex justify-between px-10">
           <ul className="flex text-gray-600 uppercase gap-5 text-sm pt-5">
             <li>Whatsapp</li>
             <li>Linkedin</li>

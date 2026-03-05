@@ -11,13 +11,13 @@ const Hero = () => {
   const isInView = useInView(ref, { once: true, margin: "-50px" });
   return (
     <div className="w-full pt-30 h-auto bg-white">
-      <div className="flex px-36 h-screen max-sm:h-80 max-sm:px-10 max-sm:mt-10">
+      <div className="flex px-36 h-screen max-sm:h-80 max-sm:px-10 max-sm:mt-10 max-md:px-18">
         <Image
           src={tab}
           alt="Hero Image"
           width={500}
           height={600}
-          className="absolute mt-30 max-sm:w-30 max-sm:h-30 max-sm:mt-16"
+          className="absolute mt-30 max-sm:w-30 md:w-50 max-sm:h-30 max-sm:mt-16"
         />
         <motion.div
 
@@ -26,17 +26,17 @@ const Hero = () => {
             src={pc}
             alt="Hero Image"
             height={800}
-            className=" absolute z-20 ml-30 max-sm:ml-2 max-sm:w-80"
+            className=" absolute z-20 ml-30 md:ml-10 max-sm:ml-2 max-sm:w-80 md:w-110"
           />
         </motion.div>
         <Image
           src={phone}
           alt="Hero Image"
           height={400}
-          className="absolute z-30 ml-184 mt-24 max-sm:ml-60 max-sm:h-40 max-sm:w-22 max-sm:mt-10"
+          className="absolute z-30 ml-184 md:ml-100 md:mt-10 md:w-30 mt-24 max-sm:ml-60 max-sm:h-40 max-sm:w-22 max-sm:mt-10"
         />
       </div>
-      <div className="text-center -mt-14 px-70 max-sm:px-10 w-full pb-20">
+      <div className="text-center -mt-14 md:-mt-70 lg:px-70 md:px-20 px-10 w-full pb-20">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
