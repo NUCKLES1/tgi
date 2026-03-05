@@ -38,7 +38,7 @@ const About = () => {
           </div>
         </div>
 
-        <div className="w-1/2 max-sm:w-full h-full bg-gradient-to-t from-amber-100  to-amber-200 max-sm:bg-gradient-to-l max-sm:from-amber-100 max-sm:-mt-10 md:pb-14  max-sm:to-amber-200 pb-30 max-sm:pb-20">
+        <div className="w-1/2 max-sm:w-full h-full bg-gradient-to-t from-amber-100  to-amber-200 max-sm:bg-gradient-to-l max-sm:from-amber-100 max-sm:-mt-10 md:pb-14  max-sm:to-amber-200 lg:pb-48 pb-20">
           <div className="pb-10 pt-10 md:pt-2 max-sm:m-6 m-10 lg:border-b">
             <motion.div
               initial={{ opacity: 0, y: 30 }}
