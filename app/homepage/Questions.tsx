@@ -64,7 +64,7 @@ const Question = () => {
           FAQ
         </h1>
         <p className="text-[#707070] lg:text-[22px] lg:pt-10 p-2">
-          We`re happy to answer your questions
+          We are happy to answer your questions
         </p>
       </div>
       <div className="w-full mt-20">
